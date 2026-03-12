@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "9976d371-6828-43ea-95c9-44d27061c279")
 	(paper "A4")
+	(title_block
+		(title "5 Step Sequencer ")
+		(date "2026-03-12")
+		(company "Dirty Dream - Nathanael Noir")
+		(comment 1 "Buchla Inspired")
+	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:TL072"
 			(pin_names
@@ -1920,6 +1926,18 @@
 		)
 	)
 	(rectangle
+		(start 19.05 106.68)
+		(end 99.06 142.24)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid b596528a-df2e-412e-ac8b-472fbd8ba256)
+	)
+	(rectangle
 		(start 19.05 16.51)
 		(end 184.15 99.06)
 		(stroke
@@ -1931,9 +1949,20 @@
 		)
 		(uuid e42ae634-9288-4c7a-ac28-03dc812b770a)
 	)
-	(text "Eurorack Power Input"
+	(text "TL074 POWER"
 		(exclude_from_sim no)
-		(at 43.434 24.13 0)
+		(at 57.15 112.014 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.3175)
+			)
+		)
+		(uuid "143ecb3b-56b9-4562-85a8-7c3079cab6d2")
+	)
+	(text "Eurorack Power & IDC CONNECTOR"
+		(exclude_from_sim no)
+		(at 55.626 23.876 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -1957,6 +1986,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "02c02f55-da9f-459f-b549-d84c47cf89b3")
+	)
+	(junction
+		(at 45.72 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02c30d1a-f1ec-47be-b843-0d3fef7f87fc")
 	)
 	(junction
 		(at 109.22 66.04)
@@ -2043,6 +2078,12 @@
 		(uuid "aabda69a-8e28-417b-a7aa-52a135503e71")
 	)
 	(junction
+		(at 58.42 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b6d625a6-4499-462d-87a5-fddc76df3dcb")
+	)
+	(junction
 		(at 123.19 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2053,6 +2094,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0353e28-cb9f-43ed-8cbb-eb0e39f6214e")
+	)
+	(junction
+		(at 58.42 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd967ffe-0d1c-4c2f-bdc7-77fc46af520c")
 	)
 	(junction
 		(at 53.34 80.01)
@@ -2120,6 +2167,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 134.62) (xy 58.42 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ade66d2-0b09-491d-b126-3d95675f3686")
+	)
+	(wire
+		(pts
 			(xy 130.81 77.47) (xy 147.32 77.47)
 		)
 		(stroke
@@ -2157,6 +2214,16 @@
 			(type default)
 		)
 		(uuid "1e0e4a3d-777d-4f89-a7d9-0964d81f92f3")
+	)
+	(wire
+		(pts
+			(xy 45.72 127) (xy 45.72 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f6d9c50-3608-4bfa-a464-4e3415b556c0")
 	)
 	(wire
 		(pts
@@ -2237,6 +2304,16 @@
 			(type default)
 		)
 		(uuid "3b11065b-255c-493a-b179-2857a8d5c5fe")
+	)
+	(wire
+		(pts
+			(xy 45.72 128.27) (xy 45.72 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ff9826d-44b7-4cfa-8de8-62d643a786c1")
 	)
 	(wire
 		(pts
@@ -2350,6 +2427,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 137.16) (xy 58.42 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68a5ddda-d41a-4600-8229-d8566e9e462f")
+	)
+	(wire
+		(pts
 			(xy 109.22 77.47) (xy 123.19 77.47)
 		)
 		(stroke
@@ -2447,6 +2534,16 @@
 			(type default)
 		)
 		(uuid "867df6f9-2805-4164-b5a6-c8d3384ec4e5")
+	)
+	(wire
+		(pts
+			(xy 63.5 119.38) (xy 58.42 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "889b8169-66bc-456d-9b92-734298cf2e5c")
 	)
 	(wire
 		(pts
@@ -2570,6 +2667,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 119.38) (xy 58.42 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c652d479-e65d-47a8-a285-1fe381db1875")
+	)
+	(wire
+		(pts
 			(xy 59.69 43.18) (xy 59.69 63.5)
 		)
 		(stroke
@@ -2657,6 +2764,16 @@
 			(type default)
 		)
 		(uuid "d9ebd616-da1a-4c0e-9b40-517c5d2a6c3f")
+	)
+	(wire
+		(pts
+			(xy 63.5 137.16) (xy 58.42 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddc0e0c7-3bb2-4905-a996-e600f462beae")
 	)
 	(wire
 		(pts
@@ -2773,6 +2890,141 @@
 			(project "5 Sep Sequencer"
 				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b/4fa43ce6-75e2-4254-9dee-ae44702d62b6"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 128.27 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23903f12-4826-4e99-aa3d-86708c5f0744")
+		(property "Reference" "#PWR031"
+			(at 39.37 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 41.91 128.2699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.72 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "954dc383-1436-45b5-ab0a-25c82f8c1da1")
+		)
+		(instances
+			(project ""
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b/4fa43ce6-75e2-4254-9dee-ae44702d62b6"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-12V")
+		(at 63.5 137.16 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "341d4262-827b-4fd9-be6d-71ee36f5fee1")
+		(property "Reference" "#PWR030"
+			(at 59.69 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-12V"
+			(at 67.31 137.1599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-12V\""
+			(at 63.5 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7864d241-b291-49ee-a0ad-8bd7b5d120bf")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b/4fa43ce6-75e2-4254-9dee-ae44702d62b6"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -3054,8 +3306,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 45.72 123.19 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "67c2da82-a18b-48c7-982e-12fae527af35")
+		(property "Reference" "C4"
+			(at 54.864 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 54.864 124.206 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 44.7548 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.taydaelectronics.com/100nf-50v-smd-ceramic-chip-capacitor.html"
+			(at 45.72 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 45.72 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aaf401b7-1990-4e31-8da0-8182bd791c94")
+		)
+		(pin "1"
+			(uuid "d38a9e1b-ba7c-4a29-8d60-84df3d97626b")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b/4fa43ce6-75e2-4254-9dee-ae44702d62b6"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:TL072")
-		(at 224.79 43.18 0)
+		(at 60.96 127 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3064,7 +3386,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d2cf27b-7601-4268-a959-1765f4b2ba81")
 		(property "Reference" "U1"
-			(at 223.52 41.9099 0)
+			(at 59.69 125.7299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3073,7 +3395,7 @@
 			)
 		)
 		(property "Value" "TL072"
-			(at 223.52 44.4499 0)
+			(at 59.69 128.2699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3082,7 +3404,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 224.79 43.18 0)
+			(at 60.96 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3091,7 +3413,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 224.79 43.18 0)
+			(at 60.96 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3100,7 +3422,7 @@
 			)
 		)
 		(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
-			(at 224.79 43.18 0)
+			(at 60.96 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3716,6 +4038,73 @@
 			(project "5 Sep Sequencer"
 				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b/4fa43ce6-75e2-4254-9dee-ae44702d62b6"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 63.5 119.38 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba5a058f-f954-43ef-9da9-dc7571a3dbc5")
+		(property "Reference" "#PWR029"
+			(at 59.69 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 67.31 119.3799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 63.5 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c31b035-9dfa-427d-b486-eafe6467cb0f")
+		)
+		(instances
+			(project ""
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b/4fa43ce6-75e2-4254-9dee-ae44702d62b6"
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -4523,6 +4912,76 @@
 			(project ""
 				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b/4fa43ce6-75e2-4254-9dee-ae44702d62b6"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 45.72 133.35 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4a082f5-ddbc-4687-995a-c0d38f957fc5")
+		(property "Reference" "C11"
+			(at 55.118 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 55.118 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 44.7548 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.taydaelectronics.com/100nf-50v-smd-ceramic-chip-capacitor.html"
+			(at 45.72 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 45.72 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c1672ce9-12ee-4813-b8d6-5dda3c9fc5a4")
+		)
+		(pin "1"
+			(uuid "c39a2212-40f2-42ae-ac4d-7cf5dafc3365")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b/4fa43ce6-75e2-4254-9dee-ae44702d62b6"
+					(reference "C11")
 					(unit 1)
 				)
 			)
