@@ -6,7 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "5 Step Sequencer")
-		(date "2026-03-12")
+		(date "2026-03-13")
+		(rev "v1.0")
 		(company "Dirty Dream - Nathanael Noir")
 		(comment 1 "A 5 step sequencer inspired by the Buchla Sound Easel")
 	)

@@ -13320,7 +13320,7 @@
 		)
 	)
 	(sheet
-		(at 17.78 175.26)
+		(at 34.29 172.72)
 		(size 31.75 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13335,8 +13335,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "4fa43ce6-75e2-4254-9dee-ae44702d62b6")
-		(property "Sheetname" "EURORACK POWER"
-			(at 17.78 174.5484 0)
+		(property "Sheetname" "Power & IDC Connector"
+			(at 34.29 172.0084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13345,7 +13345,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 17.78 193.6246 0)
+			(at 34.29 191.0846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
