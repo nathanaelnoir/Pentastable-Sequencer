@@ -5,10 +5,10 @@
 	(uuid "9976d371-6828-43ea-95c9-44d27061c279")
 	(paper "A4")
 	(title_block
-		(title "5 Step Sequencer ")
+		(title "5 Step Sequencer")
 		(date "2026-03-12")
 		(company "Dirty Dream - Nathanael Noir")
-		(comment 1 "Buchla Inspired")
+		(comment 1 "A 5 step sequencer inspired by the Buchla Sound Easel")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:TL072"
@@ -1951,7 +1951,7 @@
 	)
 	(text "TL074 POWER"
 		(exclude_from_sim no)
-		(at 57.15 112.014 0)
+		(at 37.084 111.76 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -1962,7 +1962,7 @@
 	)
 	(text "Eurorack Power & IDC CONNECTOR"
 		(exclude_from_sim no)
-		(at 55.626 23.876 0)
+		(at 55.626 23.114 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -1973,7 +1973,7 @@
 	)
 	(text "Power Rail Providing +12V, -12V, and +5V."
 		(exclude_from_sim no)
-		(at 44.704 31.242 0)
+		(at 44.704 30.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2006,12 +2006,6 @@
 		(uuid "0b473113-ed06-47dc-a089-1f9cdafb765d")
 	)
 	(junction
-		(at 91.44 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "17aa26c6-31be-49b2-98d9-eef5863b6c6c")
-	)
-	(junction
 		(at 123.19 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2042,6 +2036,12 @@
 		(uuid "5c4565d9-c637-4a1d-9c22-f3563e173f97")
 	)
 	(junction
+		(at 130.81 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7110962a-563f-4687-8985-e48c00d4c3cb")
+	)
+	(junction
 		(at 38.1 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2052,12 +2052,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "86ee90fb-452d-4f3d-83f5-b644551e9849")
-	)
-	(junction
-		(at 135.89 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "874313b2-ecb8-400d-b426-81bc759cf71a")
 	)
 	(junction
 		(at 109.22 87.63)
@@ -2267,6 +2261,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 43.18) (xy 147.32 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "285f9227-64ac-4b52-b71d-402451771604")
+	)
+	(wire
+		(pts
 			(xy 91.44 87.63) (xy 109.22 87.63)
 		)
 		(stroke
@@ -2347,16 +2351,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 43.18) (xy 123.19 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47cdb500-4876-4de7-ba42-e21a622683fe")
-	)
-	(wire
-		(pts
 			(xy 130.81 66.04) (xy 147.32 66.04)
 		)
 		(stroke
@@ -2374,6 +2368,16 @@
 			(type default)
 		)
 		(uuid "4e3d7a85-2119-4bff-946e-8e9020d5d52d")
+	)
+	(wire
+		(pts
+			(xy 123.19 43.18) (xy 130.81 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "572391c1-62e4-44b7-86ef-b0eaea241ce6")
 	)
 	(wire
 		(pts
@@ -2447,16 +2451,6 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 43.18) (xy 109.22 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c45c995-2fb8-4857-b96a-fe00f12504e3")
-	)
-	(wire
-		(pts
 			(xy 109.22 76.2) (xy 109.22 77.47)
 		)
 		(stroke
@@ -2474,6 +2468,16 @@
 			(type default)
 		)
 		(uuid "6d5058d3-84a2-4957-a6f5-0e5e17d53129")
+	)
+	(wire
+		(pts
+			(xy 123.19 43.18) (xy 109.22 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dc227d2-bf3b-439b-b443-190119dafd72")
 	)
 	(wire
 		(pts
@@ -2577,17 +2581,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 43.18) (xy 147.32 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "935b889f-53e2-4784-bb39-156cce7de796")
-	)
-	(wire
-		(pts
-			(xy 80.01 43.18) (xy 91.44 43.18)
+			(xy 80.01 43.18) (xy 109.22 43.18)
 		)
 		(stroke
 			(width 0)
@@ -2644,6 +2638,16 @@
 			(type default)
 		)
 		(uuid "afbcb76b-cdc8-48f5-a7a3-8b93f6ee664b")
+	)
+	(wire
+		(pts
+			(xy 31.75 128.27) (xy 45.72 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afcd5e18-fcc8-4c44-9c25-c6d4a27389f3")
 	)
 	(wire
 		(pts
@@ -2714,16 +2718,6 @@
 			(type default)
 		)
 		(uuid "ce484d2d-f51d-4717-a1ed-73257ef0398d")
-	)
-	(wire
-		(pts
-			(xy 123.19 43.18) (xy 135.89 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d065c7b5-e44f-4921-9e8f-fe698bfeb92d")
 	)
 	(wire
 		(pts
@@ -2897,7 +2891,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 45.72 128.27 270)
+		(at 31.75 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2906,7 +2900,7 @@
 		(fields_autoplaced yes)
 		(uuid "23903f12-4826-4e99-aa3d-86708c5f0744")
 		(property "Reference" "#PWR031"
-			(at 39.37 128.27 0)
+			(at 31.75 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2915,16 +2909,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 41.91 128.2699 90)
+			(at 31.75 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 128.27 0)
+			(at 31.75 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2933,7 +2926,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 128.27 0)
+			(at 31.75 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2942,7 +2935,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 128.27 0)
+			(at 31.75 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3100,7 +3093,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 135.89 43.18 0)
+		(at 130.81 43.18 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3109,7 +3102,7 @@
 		(dnp no)
 		(uuid "527c14e7-af3a-4428-ae70-689d9b35142b")
 		(property "Reference" "TP7"
-			(at 137.414 35.306 0)
+			(at 132.334 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3118,7 +3111,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 137.16 37.338 0)
+			(at 132.08 37.338 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3127,7 +3120,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 130.81 43.18 0)
+			(at 125.73 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3136,7 +3129,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 130.81 43.18 0)
+			(at 125.73 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3145,7 +3138,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 135.89 43.18 0)
+			(at 130.81 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4982,73 +4975,6 @@
 			(project "5 Step Sequencer"
 				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b/4fa43ce6-75e2-4254-9dee-ae44702d62b6"
 					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 91.44 43.18 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fd0952e1-d9d4-4be9-bd45-f695bc8d1065")
-		(property "Reference" "#FLG04"
-			(at 91.44 41.275 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 86.868 38.862 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 91.44 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 91.44 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a8349c7b-6437-4aca-aedb-d799c11cf961")
-		)
-		(instances
-			(project "5 Sep Sequencer"
-				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b/4fa43ce6-75e2-4254-9dee-ae44702d62b6"
-					(reference "#FLG04")
 					(unit 1)
 				)
 			)
