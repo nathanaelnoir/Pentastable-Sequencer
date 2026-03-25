@@ -2820,6 +2820,36 @@
 		)
 		(uuid "ff512ae3-68ee-4ca0-a7f8-6cfc20234f7f")
 	)
+	(label "-12V"
+		(at 64.77 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "924321e4-1b3e-4b22-96c2-cd3eec562fb7")
+	)
+	(label "+5V"
+		(at 63.5 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9408cdc4-c520-4387-bad4-019d3beb206f")
+	)
+	(label "+12V"
+		(at 62.23 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e407fca9-896b-4503-8506-24aeaa6e6e1e")
+	)
 	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 123.19 49.53 0)

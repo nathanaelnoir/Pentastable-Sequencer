@@ -2466,24 +2466,24 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_DPST_x2"
+		(symbol "Switch:SW_SPDT_321"
 			(pin_names
-				(offset 0)
+				(offset 1)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 0 3.175 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "SW_DPST_x2"
-				(at 0 -2.54 0)
+			(property "Value" "SW_SPDT_321"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2491,7 +2491,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at 0 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2500,6 +2500,15 @@
 				)
 			)
 			(property "Datasheet" "~"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Switch, single pole double throw"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2508,7 +2517,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
+			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2517,19 +2526,10 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "switch lever"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_DPST_x2_0_0"
+			(symbol "SW_SPDT_321_0_1"
 				(circle
 					(center -2.032 0)
-					(radius 0.508)
+					(radius 0.4572)
 					(stroke
 						(width 0)
 						(type default)
@@ -2540,7 +2540,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.254) (xy 1.524 1.778)
+						(xy -1.651 0.254) (xy 1.651 2.286)
 					)
 					(stroke
 						(width 0)
@@ -2551,8 +2551,19 @@
 					)
 				)
 				(circle
-					(center 2.032 0)
-					(radius 0.508)
+					(center 2.032 2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.4572)
 					(stroke
 						(width 0)
 						(type default)
@@ -2562,27 +2573,20 @@
 					)
 				)
 			)
-			(symbol "SW_DPST_x2_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+			(symbol "SW_SPDT_321_1_1"
+				(rectangle
+					(start -3.175 3.81)
+					(end 3.175 -3.81)
+					(stroke
+						(width 0)
+						(type default)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(fill
+						(type background)
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -5.08 0 0)
 					(length 2.54)
 					(name "B"
 						(effects
@@ -2599,10 +2603,8 @@
 						)
 					)
 				)
-			)
-			(symbol "SW_DPST_x2_2_1"
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 2.54 180)
 					(length 2.54)
 					(name "A"
 						(effects
@@ -2620,16 +2622,16 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at 5.08 -2.54 180)
 					(length 2.54)
-					(name "B"
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3283,12 +3285,6 @@
 		(uuid "e2b319e8-0221-4192-b39b-39c77c537cd1")
 	)
 	(junction
-		(at 138.43 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "06ef98ca-733e-4297-bf2a-f0ef20004dd0")
-	)
-	(junction
 		(at 273.05 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3307,12 +3303,6 @@
 		(uuid "17cbd49b-310e-4e51-9db5-1caeeba892da")
 	)
 	(junction
-		(at 138.43 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "21b8b72e-0ccc-4005-8a15-ea4c414b171a")
-	)
-	(junction
 		(at 166.37 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3325,16 +3315,16 @@
 		(uuid "32af04c3-d672-415c-968a-3184074b25bd")
 	)
 	(junction
-		(at 138.43 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "32e6ad53-05af-4d1f-bcbe-ba48551138b9")
-	)
-	(junction
-		(at 36.83 39.37)
+		(at 50.8 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "39d7b773-3466-41c4-b375-d029697d1ba3")
+	)
+	(junction
+		(at 138.43 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3cbdcd4c-18dc-4af4-a8bd-64e88d434aeb")
 	)
 	(junction
 		(at 218.44 35.56)
@@ -3367,12 +3357,6 @@
 		(uuid "68fabbb4-42ae-4acd-9a9d-fb0745189f8a")
 	)
 	(junction
-		(at 138.43 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6d5eeac9-3e1e-4957-ad91-f486d284b2b5")
-	)
-	(junction
 		(at 237.49 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3389,6 +3373,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "870e0126-f091-4d07-83bf-106ccf7898d3")
+	)
+	(junction
+		(at 138.43 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87316fff-2f80-4a1a-bfd6-b78b83473c77")
 	)
 	(junction
 		(at 129.54 105.41)
@@ -3409,16 +3399,22 @@
 		(uuid "9dfaadaa-e460-444d-81ab-e25e21257e84")
 	)
 	(junction
-		(at 46.99 39.37)
+		(at 138.43 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae57bda2-c250-4f8f-a069-e5ee19fb1337")
+	)
+	(junction
+		(at 60.96 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ca6c4cde-003a-4be3-996e-808598433b73")
 	)
 	(junction
-		(at 138.43 171.45)
+		(at 138.43 173.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cbe5e6f3-a17e-4e2e-9f6e-4d4c6d875389")
+		(uuid "cbd61ebb-c224-49a1-bf25-621f0a595056")
 	)
 	(junction
 		(at 41.91 83.82)
@@ -3469,6 +3465,12 @@
 		(uuid "e4f7509f-6d39-4459-b6e7-b7c6ed17cb04")
 	)
 	(junction
+		(at 138.43 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef1dfd95-b917-444e-874a-108177fa6046")
+	)
+	(junction
 		(at 123.19 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3481,7 +3483,7 @@
 		(uuid "f4f201fc-69b9-4d95-8e4a-72ad11b50d97")
 	)
 	(junction
-		(at 36.83 49.53)
+		(at 50.8 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc6751d6-f936-4966-8796-18069c99e625")
@@ -3491,8 +3493,16 @@
 		(uuid "1fb16763-fae5-4db5-ae66-dbd7fef387ac")
 	)
 	(no_connect
+		(at 143.51 119.38)
+		(uuid "28b98d05-e09b-41d8-91fa-73631dd7b2af")
+	)
+	(no_connect
 		(at 160.02 92.71)
 		(uuid "321be1f1-08ae-49af-8393-94a9e1d6bf61")
+	)
+	(no_connect
+		(at 144.78 152.4)
+		(uuid "48fb8aeb-f646-49d2-8c49-1f223cf90959")
 	)
 	(no_connect
 		(at 25.4 36.83)
@@ -3503,12 +3513,24 @@
 		(uuid "8f44fe7b-17c7-4de0-8ce0-8026d637d5c9")
 	)
 	(no_connect
+		(at 143.51 135.89)
+		(uuid "9bd6c930-3800-4fc4-8ebb-feb5ab214ad0")
+	)
+	(no_connect
 		(at 228.6 118.11)
 		(uuid "9c33a4ef-d9c9-4a10-9a2a-351dbfe44025")
 	)
 	(no_connect
 		(at 273.05 35.56)
 		(uuid "9fd6dfba-7056-4577-b332-19f7bff4fa94")
+	)
+	(no_connect
+		(at 144.78 168.91)
+		(uuid "a25761f8-3100-43ad-b21c-1e5c6251853e")
+	)
+	(no_connect
+		(at 144.78 185.42)
+		(uuid "a51a058d-1623-45fd-a59f-4ec1dad8c064")
 	)
 	(no_connect
 		(at 260.35 50.8)
@@ -3554,6 +3576,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 135.89) (xy 138.43 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01e30ee9-24a4-432e-85d7-72309f08bd69")
+	)
+	(wire
+		(pts
 			(xy 107.95 173.99) (xy 138.43 173.99)
 		)
 		(stroke
@@ -3564,23 +3596,13 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 39.37) (xy 46.99 39.37)
+			(xy 50.8 39.37) (xy 60.96 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "02a7d6b7-d166-48d9-a41a-2480e17b00a2")
-	)
-	(wire
-		(pts
-			(xy 138.43 190.5) (xy 138.43 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02e633ad-7eb5-4c57-9645-ac5e4b7dd021")
 	)
 	(wire
 		(pts
@@ -3624,6 +3646,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 39.37) (xy 41.91 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b2c6afb-7d60-455e-b409-e69eafade703")
+	)
+	(wire
+		(pts
 			(xy 208.28 52.07) (xy 214.63 52.07)
 		)
 		(stroke
@@ -3634,7 +3666,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 124.46) (xy 138.43 121.92)
+			(xy 138.43 119.38) (xy 138.43 124.46)
 		)
 		(stroke
 			(width 0)
@@ -3654,7 +3686,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 157.48) (xy 138.43 154.94)
+			(xy 138.43 152.4) (xy 138.43 157.48)
 		)
 		(stroke
 			(width 0)
@@ -3754,16 +3786,6 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 71.12) (xy 49.53 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "177c6a12-6351-4583-8d9d-1fdc9b34715f")
-	)
-	(wire
-		(pts
 			(xy 214.63 38.1) (xy 214.63 48.26)
 		)
 		(stroke
@@ -3801,16 +3823,6 @@
 			(type default)
 		)
 		(uuid "1c327156-aaee-4840-a8d7-97bf5a169844")
-	)
-	(wire
-		(pts
-			(xy 26.67 81.28) (xy 26.67 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1dad7504-0cf5-4f45-b1dc-2286686ba0ca")
 	)
 	(wire
 		(pts
@@ -4004,7 +4016,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 154.94) (xy 157.48 154.94)
+			(xy 154.94 154.94) (xy 157.48 154.94)
 		)
 		(stroke
 			(width 0)
@@ -4114,23 +4126,13 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 187.96) (xy 138.43 187.96)
+			(xy 144.78 190.5) (xy 138.43 190.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "44ca2547-08bc-48a7-a3a4-504a4c3cd941")
-	)
-	(wire
-		(pts
-			(xy 138.43 135.89) (xy 138.43 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "470f4807-d93b-4578-8824-4756b58324d1")
 	)
 	(wire
 		(pts
@@ -4144,7 +4146,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 121.92) (xy 138.43 121.92)
+			(xy 143.51 124.46) (xy 138.43 124.46)
 		)
 		(stroke
 			(width 0)
@@ -4154,7 +4156,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 33.02) (xy 46.99 31.75)
+			(xy 60.96 33.02) (xy 60.96 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4214,13 +4216,23 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 49.53) (xy 36.83 48.26)
+			(xy 50.8 49.53) (xy 50.8 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "51215822-81c2-4ccf-9aed-0762c1d9aea8")
+	)
+	(wire
+		(pts
+			(xy 26.67 71.12) (xy 26.67 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "522f45be-d882-475c-b6a9-d4586eeda383")
 	)
 	(wire
 		(pts
@@ -4234,7 +4246,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 40.64) (xy 46.99 39.37)
+			(xy 60.96 40.64) (xy 60.96 39.37)
 		)
 		(stroke
 			(width 0)
@@ -4361,16 +4373,6 @@
 			(type default)
 		)
 		(uuid "60c8d6ef-5034-4837-abfc-9166b2d5c89f")
-	)
-	(wire
-		(pts
-			(xy 138.43 119.38) (xy 138.43 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60efd849-7df0-4557-ad69-cae2344d2f4e")
 	)
 	(wire
 		(pts
@@ -4514,7 +4516,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 40.64) (xy 36.83 39.37)
+			(xy 50.8 40.64) (xy 50.8 39.37)
 		)
 		(stroke
 			(width 0)
@@ -4624,7 +4626,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 154.94) (xy 138.43 154.94)
+			(xy 144.78 157.48) (xy 138.43 157.48)
 		)
 		(stroke
 			(width 0)
@@ -4694,7 +4696,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 138.43) (xy 138.43 138.43)
+			(xy 143.51 140.97) (xy 138.43 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4744,23 +4746,13 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 49.53) (xy 46.99 48.26)
+			(xy 60.96 49.53) (xy 60.96 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9bcbb3c0-b899-4f23-8471-aefde372fbc9")
-	)
-	(wire
-		(pts
-			(xy 25.4 39.37) (xy 27.94 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c24db0c-c93c-4a06-a4ae-df990cb112ff")
 	)
 	(wire
 		(pts
@@ -4834,7 +4826,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 39.37) (xy 36.83 39.37)
+			(xy 49.53 39.37) (xy 50.8 39.37)
 		)
 		(stroke
 			(width 0)
@@ -4884,7 +4876,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 173.99) (xy 138.43 171.45)
+			(xy 138.43 168.91) (xy 138.43 173.99)
 		)
 		(stroke
 			(width 0)
@@ -5054,6 +5046,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 185.42) (xy 138.43 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c365d205-705c-4717-9332-af620693c06f")
+	)
+	(wire
+		(pts
 			(xy 165.1 121.92) (xy 166.37 121.92)
 		)
 		(stroke
@@ -5094,17 +5096,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 168.91) (xy 138.43 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca590260-02eb-48ef-b18e-b33b111b7e35")
-	)
-	(wire
-		(pts
-			(xy 36.83 49.53) (xy 46.99 49.53)
+			(xy 50.8 49.53) (xy 60.96 49.53)
 		)
 		(stroke
 			(width 0)
@@ -5131,16 +5123,6 @@
 			(type default)
 		)
 		(uuid "ccf05306-9cf5-4ea0-8d6f-091a81c7c085")
-	)
-	(wire
-		(pts
-			(xy 138.43 140.97) (xy 138.43 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce7267b4-bed1-46a2-9393-daa63b8483bf")
 	)
 	(wire
 		(pts
@@ -5194,7 +5176,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 39.37) (xy 57.15 39.37)
+			(xy 60.96 39.37) (xy 71.12 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5254,16 +5236,6 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 185.42) (xy 138.43 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de5a6f71-b16c-43c8-8148-c509977f6684")
-	)
-	(wire
-		(pts
 			(xy 38.1 97.79) (xy 38.1 96.52)
 		)
 		(stroke
@@ -5284,7 +5256,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 171.45) (xy 144.78 171.45)
+			(xy 138.43 173.99) (xy 144.78 173.99)
 		)
 		(stroke
 			(width 0)
@@ -5311,16 +5283,6 @@
 			(type default)
 		)
 		(uuid "e68e3c8e-d873-4a15-8464-daca1405be18")
-	)
-	(wire
-		(pts
-			(xy 138.43 152.4) (xy 138.43 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e737d0b3-7392-4892-82dc-634da3493d91")
 	)
 	(wire
 		(pts
@@ -5391,6 +5353,16 @@
 			(type default)
 		)
 		(uuid "f04ae4b6-2075-4d51-ab25-7e94ae61686c")
+	)
+	(wire
+		(pts
+			(xy 41.91 71.12) (xy 26.67 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0e070b0-218f-42ad-ba6a-2b6289f5c249")
 	)
 	(wire
 		(pts
@@ -5511,6 +5483,26 @@
 			(type default)
 		)
 		(uuid "fecdbf5c-9945-4c63-932c-0f785e4dcd52")
+	)
+	(label "Trigger_DTCT"
+		(at 27.94 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "48fbf6cb-9d66-4ef2-a0ac-3878ac4c5caf")
+	)
+	(label "JackReset"
+		(at 29.21 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "67c5c899-bec5-4523-bd73-683cb011791e")
 	)
 	(global_label "3st"
 		(shape input)
@@ -6020,7 +6012,7 @@
 	)
 	(global_label "RESET IN"
 		(shape input)
-		(at 57.15 39.37 0)
+		(at 71.12 39.37 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6030,7 +6022,7 @@
 		)
 		(uuid "a0a716ab-b9ca-420f-bd5a-ee2fa3671c08")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.7832 39.37 0)
+			(at 82.7532 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6700,7 +6692,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 36.83 49.53 0)
+		(at 50.8 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6709,7 +6701,7 @@
 		(fields_autoplaced yes)
 		(uuid "0ef4d2f5-109c-4dd7-b98e-de1c92c61a7d")
 		(property "Reference" "#PWR09"
-			(at 36.83 55.88 0)
+			(at 50.8 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6718,7 +6710,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.83 54.61 0)
+			(at 50.8 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6726,7 +6718,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 49.53 0)
+			(at 50.8 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6735,7 +6727,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 49.53 0)
+			(at 50.8 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6744,7 +6736,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 36.83 49.53 0)
+			(at 50.8 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6766,7 +6758,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 30.48 71.12 90)
+		(at 45.72 71.12 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -6775,7 +6767,7 @@
 		(fields_autoplaced yes)
 		(uuid "1306db30-6eb4-4bc0-be14-30b6bb379cae")
 		(property "Reference" "R4"
-			(at 30.48 64.77 90)
+			(at 45.72 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6783,7 +6775,7 @@
 			)
 		)
 		(property "Value" "2.2k"
-			(at 30.48 67.31 90)
+			(at 45.72 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6791,7 +6783,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 30.48 72.898 90)
+			(at 45.72 72.898 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6800,7 +6792,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 71.12 0)
+			(at 45.72 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6809,7 +6801,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 30.48 71.12 0)
+			(at 45.72 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6827,80 +6819,6 @@
 			(project "5 Sep Sequencer"
 				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 148.59 138.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "13115753-8af9-4059-b7da-46b0c3360825")
-		(property "Reference" "SW2"
-			(at 148.59 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 148.59 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Eurorack:Switch_Toggle_Dailywell_MS1T1B1M2QES_SPDT"
-			(at 148.59 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 148.59 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
-			(at 148.59 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "73bc2b97-22da-400c-8a85-5ff3a3be8b7d")
-		)
-		(pin "2"
-			(uuid "5c170728-8bc2-4a84-bf87-057135d9f61b")
-		)
-		(pin "1"
-			(uuid "36b63af9-4abc-4be7-aebb-566ed7dbf339")
-		)
-		(pin "3"
-			(uuid "eafceda0-53d2-483d-9418-8e9dfbdc7d41")
-		)
-		(instances
-			(project "5 Step Sequencer"
-				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
-					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -7898,6 +7816,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPDT_321")
+		(at 149.86 171.45 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "40213126-120a-45a9-8f2a-7e6e07ad9e55")
+		(property "Reference" "SW3"
+			(at 149.606 165.608 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT_321"
+			(at 149.86 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Eurorack:Switch_Toggle_Dailywell_MS1T1B1M2QES_SPDT"
+			(at 149.86 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 149.86 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "68978b13-5c52-4e17-b0e3-64db15e627ef")
+		)
+		(pin "3"
+			(uuid "0e129926-5444-44ef-9bc9-3836341280e3")
+		)
+		(pin "1"
+			(uuid "1e43ef8e-92de-4a8b-a69b-21808551dc87")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 194.31 41.91 0)
 		(unit 1)
@@ -8094,6 +8084,78 @@
 			(project "5 Step Sequencer"
 				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPDT_321")
+		(at 149.86 187.96 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4418476b-4e74-4594-ad77-165e40ac3a27")
+		(property "Reference" "SW4"
+			(at 149.606 182.118 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT_321"
+			(at 149.86 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Eurorack:Switch_Toggle_Dailywell_MS1T1B1M2QES_SPDT"
+			(at 149.86 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 149.86 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "65955eaf-ff62-438e-b699-36b17c40d3f5")
+		)
+		(pin "3"
+			(uuid "5e30324e-6a4a-4d96-893d-a3aa62727c2e")
+		)
+		(pin "1"
+			(uuid "52aebe96-6043-4ea3-8d99-1810f6c89056")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
+					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -8856,80 +8918,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 149.86 171.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4e485c00-99db-43a6-8041-bdbcaffd44f5")
-		(property "Reference" "SW4"
-			(at 149.86 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 149.86 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Eurorack:Switch_Toggle_Dailywell_MS1T1B1M2QES_SPDT"
-			(at 149.86 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
-			(at 149.86 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "73bc2b97-22da-400c-8a85-5ff3a3be8b7e")
-		)
-		(pin "2"
-			(uuid "965628fe-283e-4179-8eff-fe4443a963ea")
-		)
-		(pin "1"
-			(uuid "2eb8c6f2-1364-4bbd-991d-b1a8548f9d4d")
-		)
-		(pin "3"
-			(uuid "eafceda0-53d2-483d-9418-8e9dfbdc7d42")
-		)
-		(instances
-			(project "5 Step Sequencer"
-				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
-					(reference "SW4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148")
 		(at 161.29 171.45 0)
 		(unit 1)
@@ -9293,7 +9281,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 36.83 44.45 0)
+		(at 50.8 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9302,7 +9290,7 @@
 		(fields_autoplaced yes)
 		(uuid "58a6bfa2-01b6-43b7-a21c-db3c6d97a76e")
 		(property "Reference" "R2"
-			(at 39.37 43.1799 0)
+			(at 53.34 43.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9311,7 +9299,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 39.37 45.7199 0)
+			(at 53.34 45.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9320,7 +9308,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 35.052 44.45 90)
+			(at 49.022 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9329,7 +9317,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 44.45 0)
+			(at 50.8 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9338,7 +9326,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 36.83 44.45 0)
+			(at 50.8 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9426,80 +9414,6 @@
 			(project "5 Sep Sequencer"
 				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
 					(reference "D21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 148.59 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5989fccb-143c-4d18-bf1d-d4bad0f8c6b1")
-		(property "Reference" "SW3"
-			(at 148.59 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 148.59 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Eurorack:Switch_Toggle_Dailywell_MS1T1B1M2QES_SPDT"
-			(at 148.59 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 148.59 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
-			(at 148.59 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "73bc2b97-22da-400c-8a85-5ff3a3be8b7f")
-		)
-		(pin "2"
-			(uuid "9eef4a8f-54a4-48cf-bb33-c72e1426cbe2")
-		)
-		(pin "1"
-			(uuid "3e06c027-fa0a-4724-bfee-708260542cb2")
-		)
-		(pin "3"
-			(uuid "eafceda0-53d2-483d-9418-8e9dfbdc7d43")
-		)
-		(instances
-			(project "5 Step Sequencer"
-				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
-					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -9710,6 +9624,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPDT_321")
+		(at 148.59 138.43 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "60c15ef9-46ec-42da-b976-054f53c6a7f6")
+		(property "Reference" "SW2"
+			(at 148.336 132.588 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT_321"
+			(at 148.59 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Eurorack:Switch_Toggle_Dailywell_MS1T1B1M2QES_SPDT"
+			(at 148.59 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 148.59 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "41c1d84f-97a2-4892-8767-58247ea05ca8")
+		)
+		(pin "3"
+			(uuid "736128c6-6ec4-4224-a025-0306dd4d0918")
+		)
+		(pin "1"
+			(uuid "87172e44-37df-48a3-ab9b-05e3e2770e3f")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 194.31 29.21 0)
 		(unit 1)
@@ -9769,80 +9755,6 @@
 			(project "5 Sep Sequencer"
 				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
 					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 148.59 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6735a639-014e-4bd5-bda4-0401c0fba2b5")
-		(property "Reference" "SW1"
-			(at 148.59 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 148.59 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Eurorack:Switch_Toggle_Dailywell_MS1T1B1M2QES_SPDT"
-			(at 148.59 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 148.59 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
-			(at 148.59 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "73bc2b97-22da-400c-8a85-5ff3a3be8b80")
-		)
-		(pin "2"
-			(uuid "ecbf78d4-b506-4317-bbde-1a76a6e4ff38")
-		)
-		(pin "1"
-			(uuid "df424de3-7691-4d38-94da-73d365af21d1")
-		)
-		(pin "3"
-			(uuid "eafceda0-53d2-483d-9418-8e9dfbdc7d44")
-		)
-		(instances
-			(project ""
-				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -10433,82 +10345,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 149.86 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "854a9f6c-749d-4935-9a55-97a71a79b41b")
-		(property "Reference" "SW5"
-			(at 149.86 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 149.86 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Eurorack:Switch_Toggle_Dailywell_MS1T1B1M2QES_SPDT"
-			(at 149.86 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
-			(at 149.86 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "73bc2b97-22da-400c-8a85-5ff3a3be8b81")
-		)
-		(pin "2"
-			(uuid "ef103e4e-08f3-4207-ba54-8ed315daeca0")
-		)
-		(pin "1"
-			(uuid "c0316545-56bc-4ea3-bf07-e278c0091135")
-		)
-		(pin "3"
-			(uuid "eafceda0-53d2-483d-9418-8e9dfbdc7d45")
-		)
-		(instances
-			(project "5 Step Sequencer"
-				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
-					(reference "SW5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 31.75 39.37 90)
+		(at 45.72 39.37 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -10517,7 +10355,7 @@
 		(fields_autoplaced yes)
 		(uuid "870fcdc6-ed3c-40fc-8796-5024f13726e5")
 		(property "Reference" "R1"
-			(at 31.75 33.02 90)
+			(at 45.72 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10525,7 +10363,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 31.75 35.56 90)
+			(at 45.72 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10533,7 +10371,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 31.75 41.148 90)
+			(at 45.72 41.148 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10542,7 +10380,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 39.37 0)
+			(at 45.72 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10551,7 +10389,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 31.75 39.37 0)
+			(at 45.72 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11345,7 +11183,7 @@
 	)
 	(symbol
 		(lib_id "Diode:BAT43")
-		(at 46.99 44.45 270)
+		(at 60.96 44.45 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -11354,7 +11192,7 @@
 		(fields_autoplaced yes)
 		(uuid "a25b6a2c-9a3e-4979-a230-7c52c3a44a24")
 		(property "Reference" "D2"
-			(at 49.53 42.8624 90)
+			(at 63.5 42.8624 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11363,7 +11201,7 @@
 			)
 		)
 		(property "Value" "BAT43"
-			(at 49.53 45.4024 90)
+			(at 63.5 45.4024 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11372,7 +11210,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 42.545 44.45 0)
+			(at 56.515 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11381,7 +11219,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/85660/bat42.pdf"
-			(at 46.99 44.45 0)
+			(at 60.96 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11390,7 +11228,7 @@
 			)
 		)
 		(property "Description" "30V 0.2A Small Signal Schottky Diode, DO-35"
-			(at 46.99 44.45 0)
+			(at 60.96 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11569,7 +11407,7 @@
 	)
 	(symbol
 		(lib_id "Diode:BAT43")
-		(at 46.99 35.56 270)
+		(at 60.96 35.56 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -11578,7 +11416,7 @@
 		(fields_autoplaced yes)
 		(uuid "a8b00e03-97f8-4595-b1a4-debe4684128d")
 		(property "Reference" "D1"
-			(at 49.53 33.9724 90)
+			(at 63.5 33.9724 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11587,7 +11425,7 @@
 			)
 		)
 		(property "Value" "BAT43"
-			(at 49.53 36.5124 90)
+			(at 63.5 36.5124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11596,7 +11434,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 42.545 35.56 0)
+			(at 56.515 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11605,7 +11443,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/85660/bat42.pdf"
-			(at 46.99 35.56 0)
+			(at 60.96 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11614,7 +11452,7 @@
 			)
 		)
 		(property "Description" "30V 0.2A Small Signal Schottky Diode, DO-35"
-			(at 46.99 35.56 0)
+			(at 60.96 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11712,7 +11550,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 46.99 33.02 0)
+		(at 60.96 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11720,7 +11558,7 @@
 		(dnp no)
 		(uuid "aece0929-04bf-4f78-9d83-1fe0a5ac39a8")
 		(property "Reference" "#PWR011"
-			(at 46.99 36.83 0)
+			(at 60.96 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11729,7 +11567,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 46.99 28.956 0)
+			(at 60.96 28.956 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11737,7 +11575,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 33.02 0)
+			(at 60.96 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11746,7 +11584,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 33.02 0)
+			(at 60.96 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11755,7 +11593,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 46.99 33.02 0)
+			(at 60.96 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11835,6 +11673,78 @@
 			(project "5 Sep Sequencer"
 				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPDT_321")
+		(at 148.59 121.92 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b0ee155b-ae17-4890-8422-c55569c88aaf")
+		(property "Reference" "SW1"
+			(at 148.336 116.078 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT_321"
+			(at 148.59 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Eurorack:Switch_Toggle_Dailywell_MS1T1B1M2QES_SPDT"
+			(at 148.59 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 148.59 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f3296a54-d61a-46a2-b4b2-8f9b9f55f525")
+		)
+		(pin "3"
+			(uuid "91b50b46-3776-4031-b240-4a3c870fe557")
+		)
+		(pin "1"
+			(uuid "45c37855-8c40-4cff-83e1-34b8401552c8")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -12168,6 +12078,78 @@
 			(project "5 Sep Sequencer"
 				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPDT_321")
+		(at 149.86 154.94 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ccedb87f-8707-4e10-a045-5ad7179b601d")
+		(property "Reference" "SW7"
+			(at 149.606 149.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT_321"
+			(at 149.86 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Eurorack:Switch_Toggle_Dailywell_MS1T1B1M2QES_SPDT"
+			(at 149.86 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 149.86 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c79cb8b9-96a1-4b24-9235-4736bb324e07")
+		)
+		(pin "3"
+			(uuid "92ddddaf-f003-489a-b960-9875eca9c86f")
+		)
+		(pin "1"
+			(uuid "d4882519-2d5a-4c2c-bb5d-4e1fe1ea731c")
+		)
+		(instances
+			(project ""
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
+					(reference "SW7")
 					(unit 1)
 				)
 			)
