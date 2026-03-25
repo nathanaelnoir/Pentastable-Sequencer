@@ -2640,7 +2640,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:2SA1015"
+		(symbol "Transistor_BJT:BC856"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -2657,7 +2657,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "2SA1015"
+			(property "Value" "BC856"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -2666,7 +2666,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -2677,7 +2677,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.datasheetcatalog.org/datasheet/toshiba/905.pdf"
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC860-D.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2687,7 +2687,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "-0.15A Ic, -50V Vce, Low Noise Audio PNP Transistor, TO-92"
+			(property "Description" "0.1A Ic, 65V Vce, PNP Transistor, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2696,7 +2696,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Low Noise Audio PNP Transistor"
+			(property "ki_keywords" "PNP transistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2705,7 +2705,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?92*"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2714,7 +2714,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "2SA1015_0_1"
+			(symbol "BC856_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 0.635 0)
@@ -2787,7 +2787,7 @@
 					)
 				)
 			)
-			(symbol "2SA1015_1_1"
+			(symbol "BC856_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -2798,7 +2798,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2816,7 +2816,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2834,7 +2834,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3373,12 +3373,6 @@
 		(uuid "6d5eeac9-3e1e-4957-ad91-f486d284b2b5")
 	)
 	(junction
-		(at 134.62 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6daa6516-b62d-4af0-b281-206adfa5ca5e")
-	)
-	(junction
 		(at 237.49 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3597,16 +3591,6 @@
 			(type default)
 		)
 		(uuid "043884ac-c482-4d01-97d3-59bde92ff9e3")
-	)
-	(wire
-		(pts
-			(xy 134.62 95.25) (xy 142.24 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "071d9d56-4a38-488f-9129-dace4211260b")
 	)
 	(wire
 		(pts
@@ -4330,6 +4314,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 95.25) (xy 142.24 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5edc0a55-220e-48e2-823b-0df0e2357daf")
+	)
+	(wire
+		(pts
 			(xy 165.1 154.94) (xy 166.37 154.94)
 		)
 		(stroke
@@ -4377,16 +4371,6 @@
 			(type default)
 		)
 		(uuid "60efd849-7df0-4557-ad69-cae2344d2f4e")
-	)
-	(wire
-		(pts
-			(xy 132.08 95.25) (xy 134.62 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6640b496-3185-4c32-95b3-968c109e2db7")
 	)
 	(wire
 		(pts
@@ -6435,7 +6419,7 @@
 		(at 130.81 135.89 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "036f38ac-b329-4fb6-abe1-4e26b0f976e8")
@@ -6455,7 +6439,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 130.81 137.668 90)
 			(effects
 				(font
@@ -6785,7 +6769,7 @@
 		(at 30.48 71.12 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -6806,7 +6790,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 30.48 72.898 90)
 			(effects
 				(font
@@ -6853,7 +6837,7 @@
 		(at 148.59 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -6874,7 +6858,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Switch_Toggle_Dailywell_MS1T1B1M2QES_SPDT"
 			(at 148.59 138.43 0)
 			(effects
 				(font
@@ -6927,7 +6911,7 @@
 		(at 275.59 38.1 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "15c5750f-8e04-499c-a5e3-d481ad971615")
@@ -6947,7 +6931,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
 			(at 275.59 38.1 0)
 			(effects
 				(font
@@ -6997,7 +6981,7 @@
 		(at 204.47 66.04 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -7018,7 +7002,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 204.47 66.04 0)
 			(effects
 				(font
@@ -7083,7 +7067,7 @@
 		(at 161.29 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -7104,7 +7088,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 161.29 121.92 0)
 			(effects
 				(font
@@ -7169,7 +7153,7 @@
 		(at 130.81 185.42 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -7190,7 +7174,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 130.81 187.198 90)
 			(effects
 				(font
@@ -7368,7 +7352,7 @@
 		(at 138.43 110.49 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "28967e33-c6ea-4339-9ed5-66cc96563186")
@@ -7388,7 +7372,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 138.43 108.712 90)
 			(effects
 				(font
@@ -7567,7 +7551,7 @@
 		(at 130.81 152.4 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -7588,7 +7572,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 130.81 154.178 90)
 			(effects
 				(font
@@ -7635,7 +7619,7 @@
 		(at 247.65 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "30ebd215-4b22-4407-ae71-db6f95c261d5")
@@ -7655,7 +7639,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 247.65 52.578 90)
 			(effects
 				(font
@@ -7764,80 +7748,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:2SA1015")
-		(at 129.54 97.79 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "332789e3-b274-4b49-8c44-1e4f777c2438")
-		(property "Reference" "Q1"
-			(at 129.54 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2SA1015"
-			(at 129.54 91.44 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 127.635 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.datasheetcatalog.org/datasheet/toshiba/905.pdf"
-			(at 129.54 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "-0.15A Ic, -50V Vce, Low Noise Audio PNP Transistor, TO-92"
-			(at 129.54 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "ce40a80e-629c-4b09-904e-b6b6f18c5fd1")
-		)
-		(pin "2"
-			(uuid "63abc73e-ccaf-4408-a30f-047d4b8ec90e")
-		)
-		(pin "1"
-			(uuid "9053c360-871d-414c-97bc-7e814a24beaa")
-		)
-		(instances
-			(project ""
-				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 194.31 69.85 0)
 		(unit 1)
@@ -7907,7 +7817,7 @@
 		(at 204.47 80.01 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "3e5860e3-120e-49f2-b0ab-c1f827c5206d")
@@ -7927,7 +7837,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 204.47 80.01 0)
 			(effects
 				(font
@@ -8057,7 +7967,7 @@
 		(at 119.38 185.42 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "40be9a19-2416-40c4-873b-a044130b7374")
@@ -8069,7 +7979,7 @@
 				)
 			)
 		)
-		(property "Value" "IR204A"
+		(property "Value" "LED 5"
 			(at 120.396 181.864 0)
 			(effects
 				(font
@@ -8077,7 +7987,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_IRBlack"
+		(property "Footprint" "LED_THT:LED_D3.0mm_Clear"
 			(at 119.38 189.865 0)
 			(effects
 				(font
@@ -8125,7 +8035,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "41608d47-38ea-473a-971e-3e50a78ff49d")
@@ -8279,7 +8189,7 @@
 		(at 143.51 59.69 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -8300,7 +8210,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 143.51 61.468 90)
 			(effects
 				(font
@@ -8347,7 +8257,7 @@
 		(at 161.29 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -8368,7 +8278,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 161.29 138.43 0)
 			(effects
 				(font
@@ -8433,7 +8343,7 @@
 		(at 241.3 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "4732c6a2-d5fe-496f-986f-22c8111ff8ea")
@@ -8455,7 +8365,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:Arduino_Nano"
+		(property "Footprint" "Eurorack:Arduino_Nano"
 			(at 241.3 130.81 0)
 			(effects
 				(font
@@ -8588,7 +8498,7 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "47932f25-2c48-4f09-824c-be72472ec2e2")
@@ -8608,7 +8518,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
 			(at 20.32 39.37 0)
 			(effects
 				(font
@@ -8744,7 +8654,7 @@
 		(at 147.32 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -8767,7 +8677,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 148.2852 67.31 0)
 			(effects
 				(font
@@ -8880,7 +8790,7 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "4d569ecc-05d3-45c1-8a61-a3cdb838e028")
@@ -8900,7 +8810,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
 			(at 21.59 83.82 0)
 			(effects
 				(font
@@ -8950,7 +8860,7 @@
 		(at 149.86 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -8971,7 +8881,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Switch_Toggle_Dailywell_MS1T1B1M2QES_SPDT"
 			(at 149.86 171.45 0)
 			(effects
 				(font
@@ -9024,7 +8934,7 @@
 		(at 161.29 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "5103a189-d947-48c8-ac0a-95f2619312b9")
@@ -9044,7 +8954,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 161.29 171.45 0)
 			(effects
 				(font
@@ -9110,7 +9020,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "53782850-40c1-48b3-9f65-e5e0ec88446d")
@@ -9244,7 +9154,7 @@
 		(at 135.89 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -9267,7 +9177,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Potentiometer_Alpha_RD901F_Vertical_Alt"
 			(at 135.89 59.69 0)
 			(effects
 				(font
@@ -9317,7 +9227,7 @@
 		(at 34.29 90.17 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "567bcb76-fec8-4a01-b82a-e917c025aa63")
@@ -9339,7 +9249,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 36.068 90.17 90)
 			(effects
 				(font
@@ -9386,7 +9296,7 @@
 		(at 36.83 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -9409,7 +9319,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 35.052 44.45 90)
 			(effects
 				(font
@@ -9456,7 +9366,7 @@
 		(at 142.24 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -9479,7 +9389,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 137.795 90.17 0)
 			(effects
 				(font
@@ -9526,7 +9436,7 @@
 		(at 148.59 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -9547,7 +9457,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Switch_Toggle_Dailywell_MS1T1B1M2QES_SPDT"
 			(at 148.59 154.94 0)
 			(effects
 				(font
@@ -9600,7 +9510,7 @@
 		(at 194.31 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -9623,7 +9533,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Potentiometer_Alpha_RD901F_Vertical_Alt"
 			(at 194.31 52.07 0)
 			(effects
 				(font
@@ -9869,7 +9779,7 @@
 		(at 148.59 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -9890,7 +9800,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Switch_Toggle_Dailywell_MS1T1B1M2QES_SPDT"
 			(at 148.59 121.92 0)
 			(effects
 				(font
@@ -10009,7 +9919,7 @@
 		(at 130.81 168.91 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -10030,7 +9940,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 130.81 170.688 90)
 			(effects
 				(font
@@ -10077,7 +9987,7 @@
 		(at 256.54 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -10098,7 +10008,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Potentiometer_Alpha_RD901F_Vertical_Alt"
 			(at 256.54 50.8 0)
 			(effects
 				(font
@@ -10148,7 +10058,7 @@
 		(at 120.65 119.38 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -10161,7 +10071,7 @@
 				)
 			)
 		)
-		(property "Value" "IR204A"
+		(property "Value" "LED 1"
 			(at 121.793 115.57 0)
 			(effects
 				(font
@@ -10169,7 +10079,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_IRBlack"
+		(property "Footprint" "LED_THT:LED_D3.0mm_Clear"
 			(at 120.65 123.825 0)
 			(effects
 				(font
@@ -10216,7 +10126,7 @@
 		(at 220.98 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -10239,7 +10149,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 219.202 41.91 90)
 			(effects
 				(font
@@ -10286,7 +10196,7 @@
 		(at 161.29 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -10307,7 +10217,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 161.29 154.94 0)
 			(effects
 				(font
@@ -10372,7 +10282,7 @@
 		(at 237.49 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -10395,7 +10305,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 235.712 55.88 90)
 			(effects
 				(font
@@ -10442,7 +10352,7 @@
 		(at 161.29 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "822170fc-ce3a-4aee-ab59-03146c3ff21e")
@@ -10462,7 +10372,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 161.29 187.96 0)
 			(effects
 				(font
@@ -10527,7 +10437,7 @@
 		(at 149.86 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -10548,7 +10458,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Switch_Toggle_Dailywell_MS1T1B1M2QES_SPDT"
 			(at 149.86 187.96 0)
 			(effects
 				(font
@@ -10601,7 +10511,7 @@
 		(at 31.75 39.37 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -10622,7 +10532,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 31.75 41.148 90)
 			(effects
 				(font
@@ -10797,11 +10707,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:BC856")
+		(at 129.54 97.79 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "913c23aa-0979-471c-8251-f9289e64aa17")
+		(property "Reference" "Q2"
+			(at 129.54 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BC856"
+			(at 129.54 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 127.635 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC860-D.pdf"
+			(at 129.54 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 65V Vce, PNP Transistor, SOT-23"
+			(at 129.54 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3117d48c-da25-41bd-adac-db09c19ad850")
+		)
+		(pin "3"
+			(uuid "7fc87458-bd64-4ff8-8919-2e755d884682")
+		)
+		(pin "1"
+			(uuid "a8e22b78-9af2-4571-8fe3-889a0a5dd349")
+		)
+		(instances
+			(project ""
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 194.31 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -10824,7 +10808,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Potentiometer_Alpha_RD901F_Vertical_Alt"
 			(at 194.31 38.1 0)
 			(effects
 				(font
@@ -10874,7 +10858,7 @@
 		(at 53.34 83.82 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -10895,7 +10879,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 53.34 85.598 90)
 			(effects
 				(font
@@ -10942,7 +10926,7 @@
 		(at 41.91 80.01 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "9686795c-7c9f-4a6d-aabd-2d6504cebe01")
@@ -10964,7 +10948,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 37.465 80.01 0)
 			(effects
 				(font
@@ -11141,7 +11125,7 @@
 		(at 119.38 168.91 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -11154,7 +11138,7 @@
 				)
 			)
 		)
-		(property "Value" "IR204A"
+		(property "Value" "LED 4"
 			(at 120.523 165.1 0)
 			(effects
 				(font
@@ -11162,7 +11146,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_IRBlack"
+		(property "Footprint" "LED_THT:LED_D3.0mm_Clear"
 			(at 119.38 173.355 0)
 			(effects
 				(font
@@ -11209,7 +11193,7 @@
 		(at 123.19 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "9c7b0156-ef54-48c7-a3cb-6dc8ed0412de")
@@ -11231,7 +11215,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 124.1552 104.14 0)
 			(effects
 				(font
@@ -11278,7 +11262,7 @@
 		(at 204.47 25.4 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -11299,7 +11283,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 204.47 25.4 0)
 			(effects
 				(font
@@ -11364,7 +11348,7 @@
 		(at 46.99 44.45 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -11387,7 +11371,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 42.545 44.45 0)
 			(effects
 				(font
@@ -11434,7 +11418,7 @@
 		(at 204.47 52.07 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -11455,7 +11439,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 204.47 52.07 0)
 			(effects
 				(font
@@ -11520,7 +11504,7 @@
 		(at 262.89 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -11541,7 +11525,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 262.89 39.878 90)
 			(effects
 				(font
@@ -11588,7 +11572,7 @@
 		(at 46.99 35.56 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -11611,7 +11595,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 42.545 35.56 0)
 			(effects
 				(font
@@ -11658,7 +11642,7 @@
 		(at 194.31 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -11681,7 +11665,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Potentiometer_Alpha_RD901F_Vertical_Alt"
 			(at 194.31 66.04 0)
 			(effects
 				(font
@@ -11993,7 +11977,7 @@
 		(at 120.65 152.4 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -12006,7 +11990,7 @@
 				)
 			)
 		)
-		(property "Value" "IR204A"
+		(property "Value" "LED 3"
 			(at 121.793 148.59 0)
 			(effects
 				(font
@@ -12014,7 +11998,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_IRBlack"
+		(property "Footprint" "LED_THT:LED_D3.0mm_Clear"
 			(at 120.65 156.845 0)
 			(effects
 				(font
@@ -12061,7 +12045,7 @@
 		(at 130.81 119.38 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "ca61264f-a1e5-47b3-958d-fb2cfe5ba298")
@@ -12081,7 +12065,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 130.81 121.158 90)
 			(effects
 				(font
@@ -12194,7 +12178,7 @@
 		(at 194.31 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -12217,7 +12201,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Potentiometer_Alpha_RD901F_Vertical_Alt"
 			(at 194.31 25.4 0)
 			(effects
 				(font
@@ -12267,7 +12251,7 @@
 		(at 204.47 38.1 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -12288,7 +12272,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 204.47 38.1 0)
 			(effects
 				(font
@@ -12353,7 +12337,7 @@
 		(at 41.91 88.9 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -12376,7 +12360,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 37.465 88.9 0)
 			(effects
 				(font
@@ -12423,7 +12407,7 @@
 		(at 165.1 95.25 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "d56fde71-2278-4bc9-a044-1db8ddbd563f")
@@ -12443,7 +12427,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
 			(at 165.1 95.25 0)
 			(effects
 				(font
@@ -12624,7 +12608,7 @@
 		(at 114.3 100.33 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -12647,7 +12631,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 116.078 100.33 90)
 			(effects
 				(font
@@ -12826,7 +12810,7 @@
 		(at 153.67 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "e0e8f862-ce83-4541-b87c-39e0c7b7c7c1")
@@ -12846,7 +12830,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 153.67 97.028 90)
 			(effects
 				(font
@@ -12979,7 +12963,7 @@
 		(at 194.31 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -13002,7 +12986,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Eurorack:Potentiometer_Alpha_RD901F_Vertical_Alt"
 			(at 194.31 80.01 0)
 			(effects
 				(font
@@ -13052,7 +13036,7 @@
 		(at 120.65 135.89 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "f482d058-2192-400e-8a47-4f677cc095ce")
@@ -13064,7 +13048,7 @@
 				)
 			)
 		)
-		(property "Value" "IR204A"
+		(property "Value" "LED 2"
 			(at 121.793 132.08 0)
 			(effects
 				(font
@@ -13072,7 +13056,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm_IRBlack"
+		(property "Footprint" "LED_THT:LED_D3.0mm_Clear"
 			(at 120.65 140.335 0)
 			(effects
 				(font
@@ -13119,7 +13103,7 @@
 		(at 142.24 100.33 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -13142,7 +13126,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
 			(at 137.795 100.33 0)
 			(effects
 				(font
@@ -13189,7 +13173,7 @@
 		(at 231.14 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "f9e93511-637e-422a-b5e7-295359918388")
@@ -13211,7 +13195,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 232.1052 45.72 0)
 			(effects
 				(font
