@@ -6358,7 +6358,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:JEITA_SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 247.65 38.1 0)
 			(effects
 				(font
@@ -7914,7 +7914,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:JEITA_SOIC-8_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 187.96 109.22 0)
 			(effects
 				(font
