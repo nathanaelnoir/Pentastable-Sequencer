@@ -1950,7 +1950,7 @@
 		)
 		(uuid e42ae634-9288-4c7a-ac28-03dc812b770a)
 	)
-	(text "TL074 POWER"
+	(text "TL072 POWER"
 		(exclude_from_sim no)
 		(at 37.084 111.76 0)
 		(effects

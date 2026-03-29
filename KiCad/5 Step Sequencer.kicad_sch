@@ -266,6 +266,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Audio:AudioJack2_SwitchT"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2931,6 +3038,18 @@
 		(uuid c5700aad-f0ab-4b17-bf97-2fc1ad227108)
 	)
 	(rectangle
+		(start 172.72 120.015)
+		(end 200.66 165.1)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid cb416742-a4b3-4e6e-a861-2bc67efca4a6)
+	)
+	(rectangle
 		(start 172.72 92.71)
 		(end 200.66 119.38)
 		(stroke
@@ -3076,6 +3195,12 @@
 		(uuid "e2b319e8-0221-4192-b39b-39c77c537cd1")
 	)
 	(junction
+		(at 193.04 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0829b6a8-dc28-4bcf-a456-ae6f94d6c37d")
+	)
+	(junction
 		(at 273.05 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3110,6 +3235,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "39d7b773-3466-41c4-b375-d029697d1ba3")
+	)
+	(junction
+		(at 72.39 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3b4ff189-731e-44d0-94f1-0870ae702fc2")
 	)
 	(junction
 		(at 138.43 124.46)
@@ -3154,10 +3285,22 @@
 		(uuid "726d425a-b523-4bff-8d5e-47d1cae086a9")
 	)
 	(junction
+		(at 166.37 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "772d8792-7a90-40a6-ba69-dda6f9f331b8")
+	)
+	(junction
 		(at 242.57 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7971ec0e-4f31-44c3-92e3-e4c1c82eb03b")
+	)
+	(junction
+		(at 60.96 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a327e63-8b1d-455f-a2a5-9788b7f88a9f")
 	)
 	(junction
 		(at 147.32 59.69)
@@ -3172,6 +3315,18 @@
 		(uuid "87316fff-2f80-4a1a-bfd6-b78b83473c77")
 	)
 	(junction
+		(at 254 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a01522b-b6bb-4246-864d-41a769813870")
+	)
+	(junction
+		(at 153.67 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f9f39f9-067d-4a9a-9a05-b328f5920a64")
+	)
+	(junction
 		(at 129.54 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3182,6 +3337,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "966607af-39c0-4a46-9a4f-149f5f330038")
+	)
+	(junction
+		(at 219.71 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97fdc2e9-4c73-4f03-a79d-cda372ca728a")
 	)
 	(junction
 		(at 256.54 38.1)
@@ -3679,6 +3840,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 129.54) (xy 193.04 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2835c39d-de86-4f7e-aaf3-a4e328b8e5e3")
+	)
+	(wire
+		(pts
 			(xy 194.31 46.99) (xy 194.31 48.26)
 		)
 		(stroke
@@ -3769,7 +3940,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 59.69) (xy 157.48 59.69)
+			(xy 147.32 59.69) (xy 153.67 59.69)
 		)
 		(stroke
 			(width 0)
@@ -3936,6 +4107,16 @@
 			(type default)
 		)
 		(uuid "49d3a8be-9b7c-47b8-94a6-cfb60ee438d0")
+	)
+	(wire
+		(pts
+			(xy 179.07 137.16) (xy 193.04 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ba3c1dc-f1ab-4ffa-a128-92aa624696a0")
 	)
 	(wire
 		(pts
@@ -4369,7 +4550,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 35.56) (xy 220.98 35.56)
+			(xy 218.44 35.56) (xy 219.71 35.56)
 		)
 		(stroke
 			(width 0)
@@ -4496,6 +4677,16 @@
 			(type default)
 		)
 		(uuid "8fbb27d5-3e59-4c56-9dd7-2dc770f1c7f3")
+	)
+	(wire
+		(pts
+			(xy 60.96 83.82) (xy 68.58 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "903c6b06-1a86-4236-ac1d-82b6bdbc991a")
 	)
 	(wire
 		(pts
@@ -4709,7 +4900,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 83.82) (xy 58.42 83.82)
+			(xy 57.15 83.82) (xy 60.96 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4806,6 +4997,16 @@
 			(type default)
 		)
 		(uuid "b844ee16-a98b-4ada-9de4-274b228b0263")
+	)
+	(wire
+		(pts
+			(xy 179.07 129.54) (xy 193.04 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b86f7c19-c691-4d51-a413-359277c88781")
 	)
 	(wire
 		(pts
@@ -4979,7 +5180,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 39.37) (xy 71.12 39.37)
+			(xy 60.96 39.37) (xy 72.39 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5089,6 +5290,16 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 59.69) (xy 157.48 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e71fc70f-a6f8-4161-b001-911384360687")
+	)
+	(wire
+		(pts
 			(xy 142.24 95.25) (xy 149.86 95.25)
 		)
 		(stroke
@@ -5169,6 +5380,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 39.37) (xy 74.93 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1156b07-01fd-467b-9b98-0f4218fd5686")
+	)
+	(wire
+		(pts
 			(xy 142.24 110.49) (xy 166.37 110.49)
 		)
 		(stroke
@@ -5219,6 +5440,26 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 137.16) (xy 193.04 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7d28650-c7a5-4112-a1bd-efb0d393d9a2")
+	)
+	(wire
+		(pts
+			(xy 219.71 35.56) (xy 220.98 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8337877-6cc9-4c52-b727-b1bc3ef1b99b")
+	)
+	(wire
+		(pts
 			(xy 198.12 66.04) (xy 200.66 66.04)
 		)
 		(stroke
@@ -5236,6 +5477,16 @@
 			(type default)
 		)
 		(uuid "fb41caa1-1532-4d1c-9952-d054afc13564")
+	)
+	(wire
+		(pts
+			(xy 254 102.87) (xy 262.89 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc1028c7-8f35-4582-9f44-2d25ddc63d27")
 	)
 	(wire
 		(pts
@@ -5259,7 +5510,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 102.87) (xy 262.89 102.87)
+			(xy 246.38 102.87) (xy 254 102.87)
 		)
 		(stroke
 			(width 0)
@@ -5849,7 +6100,7 @@
 	)
 	(global_label "RESET IN"
 		(shape input)
-		(at 71.12 39.37 0)
+		(at 74.93 39.37 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5859,7 +6110,7 @@
 		)
 		(uuid "a0a716ab-b9ca-420f-bd5a-ee2fa3671c08")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 82.7532 39.37 0)
+			(at 86.5632 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6091,7 +6342,7 @@
 	)
 	(global_label "TRIGGER IN"
 		(shape input)
-		(at 58.42 83.82 0)
+		(at 68.58 83.82 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6101,7 +6352,7 @@
 		)
 		(uuid "f5d9130d-1b20-4063-820b-e3640d832dfa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.1095 83.82 0)
+			(at 82.2695 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6863,6 +7114,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 166.37 110.49 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "1fda252b-6343-4204-b361-d5074732ee42")
+		(property "Reference" "TP3"
+			(at 159.512 108.966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 162.052 108.966 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 161.29 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 166.37 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c4c14d0-d830-4edb-b1f1-9f0b2868bc39")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 276.86 102.87 0)
 		(unit 1)
@@ -7121,6 +7439,73 @@
 			(project "5 Sep Sequencer"
 				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 254 102.87 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "2a9b1403-3d14-43b5-927e-46e25962ab59")
+		(property "Reference" "TP10"
+			(at 261.112 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "F"
+			(at 259.08 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 248.92 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 248.92 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 254 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "696b1685-1ac0-46d2-8ed9-24c95568dd27")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -8354,6 +8739,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 72.39 39.37 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "480b0972-20c7-4f14-a2c6-e875a8a81f9f")
+		(property "Reference" "TP1"
+			(at 79.502 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "A"
+			(at 78.232 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 67.31 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 72.39 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f86a2ee6-328b-45f0-9100-c692cc0be13f")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 147.32 63.5 0)
 		(unit 1)
@@ -8554,6 +9006,73 @@
 			(project ""
 				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 60.96 83.82 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "4df40d60-d84a-4daf-8e89-5c42ae9f680f")
+		(property "Reference" "TP2"
+			(at 68.072 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "B"
+			(at 67.056 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 55.88 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 60.96 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b98b390-83c8-4a72-a63d-74d69760ec7c")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -9133,6 +9652,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 153.67 59.69 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "598c8d8f-8b0d-483d-9275-84f87862bee5")
+		(property "Reference" "TP8"
+			(at 160.782 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D"
+			(at 161.036 56.388 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 148.59 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 153.67 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4576a05c-2c68-40c7-993f-beb3d90d7eb0")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 194.31 52.07 0)
 		(unit 1)
@@ -9608,6 +10194,73 @@
 			(project "5 Sep Sequencer"
 				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
 					(reference "RV6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 219.71 35.56 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c1763cc-ddc3-433f-9894-9f72efcbc856")
+		(property "Reference" "TP9"
+			(at 226.822 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "E"
+			(at 225.552 32.258 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 214.63 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 214.63 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 219.71 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e477000-1ca4-41f0-b119-9c77dc414a64")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -10408,6 +11061,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 193.04 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "95a5597a-e8c8-4158-a965-12a5d7931fbb")
+		(property "Reference" "#PWR043"
+			(at 193.04 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 189.484 163.068 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 193.04 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b32bd66-6225-495f-b0b7-dd9c521a2c8d")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:BAT43")
 		(at 41.91 80.01 270)
 		(unit 1)
@@ -10894,6 +11612,73 @@
 			(project "5 Sep Sequencer"
 				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 179.07 137.16 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "a56fa646-459c-4d00-9e7f-6b8a129c9825")
+		(property "Reference" "TP12"
+			(at 185.42 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 185.166 135.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 173.99 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 179.07 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42278ade-8fe1-408f-afea-0c29c7ad0937")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
+					(reference "TP12")
 					(unit 1)
 				)
 			)
@@ -12698,6 +13483,73 @@
 			(project "5 Sep Sequencer"
 				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
 					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 179.07 129.54 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "e28cd5fd-304c-4c79-956f-30d4fd30fec0")
+		(property "Reference" "TP11"
+			(at 185.42 125.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 185.166 128.016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 173.99 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 179.07 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "975eed66-2fa2-4bd6-8ccb-6bf9618e2d34")
+		)
+		(instances
+			(project "5 Step Sequencer"
+				(path "/96e48c46-040c-48e5-b6d4-8ee98b2fce0b"
+					(reference "TP11")
 					(unit 1)
 				)
 			)

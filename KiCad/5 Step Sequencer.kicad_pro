@@ -52,7 +52,24 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|159430000|106939900|53dcd462-00f4-4a8e-a993-f947341fdbad|ceb95d39-33e0-4351-8b98-07d262481db1",
+          "ok in 3d"
+        ],
+        [
+          "courtyards_overlap|159430000|127189900|74866f55-44c8-47ab-9faf-e98f7c0356b0|98bebe02-72d2-49ad-b214-2d0d17ca3a6d",
+          "ok in 3d"
+        ],
+        [
+          "courtyards_overlap|161295000|64367400|432c4eee-5914-45e1-b6ac-0f1d9c81eb5a|73853cbf-31fb-4f98-bbf1-ffc6bd83a647",
+          "courtyard of RV is intentionally bigger for easier placement"
+        ],
+        [
+          "courtyards_overlap|165175000|64367400|432c4eee-5914-45e1-b6ac-0f1d9c81eb5a|9f8d0fb3-9e83-40d0-a225-73d106799745",
+          "same for this one"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -473,6 +490,20 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 0.4,
+        "microvia_drill": 0.1,
+        "name": "PWR",
+        "pcb_color": "rgb(221, 133, 0)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "via_diameter": 0.8,
+        "via_drill": 0.6
       }
     ],
     "meta": {
@@ -485,7 +516,20 @@
       "GND": "rgb(255, 153, 0)"
     },
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "PWR",
+        "pattern": "*12V"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+5V"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
