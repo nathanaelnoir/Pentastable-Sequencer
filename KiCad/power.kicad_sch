@@ -5,10 +5,10 @@
 	(uuid "9976d371-6828-43ea-95c9-44d27061c279")
 	(paper "A4")
 	(title_block
-		(title "5 Step Sequencer")
-		(date "2026-03-13")
+		(title "Pentastable Sequencer")
+		(date "2026-04-02")
 		(rev "v1.0")
-		(company "Dirty Dream - Nathanael Noir")
+		(company "© Dirty Dream - Nathanael Noir")
 		(comment 1 "A 5 step sequencer inspired by the Buchla Sound Easel")
 	)
 	(lib_symbols
