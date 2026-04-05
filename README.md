@@ -8,14 +8,12 @@
 
 # Pentastable Sequencer
 
-Pentastable Sequencer is a 5-step Eurorack sequencer inspired by the Buchla Sound Easel. The project files still carry the working name `5 Step Sequencer`, but the PCB silkscreen and module name are `Pentastable Sequencer`.
+# ∏ (★)<sup>5</sup> Pentastable Sequencer is a 5-step Eurorack sequencer inspired by the Buchla Sound Easel.
 
 ## Contents
 
 - Overview
 - Features
-- Quick start (KiCad 9)
-- Files
 - Build & assembly notes
 - Testing
 - License & contributing
@@ -40,22 +38,6 @@ Revision in the KiCad title block is `v1.0`, dated `2026-03-13`.
 - Center-off mode switches for stage count (`3st` / `5st`) and playback behavior (`FWD` / `RND_TIE`).
 - Eurorack power sheet using `+12V`, `-12V`, `+5V`, and `GND` on a 16-pin IDC connector.
 - Mixed build with SMD passives and ICs plus through-hole panel hardware.
-
-## Quick start
-
-1. Install KiCad 9.
-2. Open `KiCad/5 Step Sequencer.kicad_pro`.
-3. Review the schematic sheets and board, then run ERC and DRC before generating fabrication files.
-
-## Files
-
-- `KiCad/5 Step Sequencer.kicad_sch` - main schematic
-- `KiCad/power.kicad_sch` - Eurorack power sheet
-- `KiCad/5 Step Sequencer.kicad_pcb` - PCB
-- `KiCad/5 Step Sequencer.kicad_pro` - KiCad project file
-- `KiCad/5 Step Sequencer.kicad_prl` - local KiCad project state
-
-Note: this repository currently contains the hardware design files only. There is no Arduino firmware or sketch in the repo.
 
 ## Build & assembly notes
 
