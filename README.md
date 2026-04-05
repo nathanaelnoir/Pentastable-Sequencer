@@ -6,9 +6,9 @@
 [![Format: Eurorack](https://img.shields.io/badge/Format-Eurorack-0093ff)](#overview)
 [![License: TBD](https://img.shields.io/badge/License-TBD-lightgrey)](#license--contributing)
 
-# Pentastable Sequencer
+# Pentastable Sequencer 
 
-# ∏ (★)<sup>5</sup> Pentastable Sequencer is a 5-step Eurorack sequencer inspired by the Buchla Sound Easel.
+# Pentastable Sequencer is a 5-step Eurorack sequencer inspired by the Buchla Sound Easel.
 
 ## Contents
 
@@ -60,3 +60,5 @@ Revision in the KiCad title block is `v1.0`, dated `2026-03-13`.
 ## License & contributing
 
 No `LICENSE` file has been added to this repository yet. Until that changes, assume the design is shared for reference and not under an explicit open-source license.
+
+$$ \huge \prod_{\star}^5 $$
